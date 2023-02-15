@@ -1,0 +1,26 @@
+<section class="table-module">
+    <div class="container table-div">
+        <table class="table">
+            <thead>
+                <tr class="table-heading">
+                    <th scope="col">ID</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">AGE</th>
+                    <th scope="col">GENDER</th>
+                    <th scope="col">CLASS</th>
+                    <th scope="col">ADDRESS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of studentsList">
+                    <td>{{student.id}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.age}}</td>
+                    <td>{{student.gender}}</td>
+                    <td>{{student.class}}</td>
+                    <td>{{student.address}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

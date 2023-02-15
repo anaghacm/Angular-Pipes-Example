@@ -1,0 +1,10 @@
+@import '../../../assets/scss/variables';
+
+.tablebase-module{
+    .heading{
+        font-size: $font-xxl;
+        color: $color-black;
+        text-align: center;
+        padding: $spacer-4 $spacer-0 $spacer-2;
+    }
+}

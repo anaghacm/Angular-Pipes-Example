@@ -1,0 +1,39 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.table-module{
+    padding-bottom: $spacer-0;
+    .table-div{
+        padding: $spacer-2 120px $spacer-0;
+        font-size: $font-md;
+        letter-spacing: 1px;
+    }
+    .table{
+        text-align: center;
+    }
+    .table-heading{
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
+
+@include tablet{
+    .table-module{
+        .table-div{
+            padding: $spacer-2;
+        }
+    }
+}
+
+@include tablet{
+    .table-module{
+        .container
+        {
+            padding: $spacer-0;
+        }
+        .table-div{
+            padding: $spacer-0;
+            font-size: $font-sm;
+        }
+    }
+}

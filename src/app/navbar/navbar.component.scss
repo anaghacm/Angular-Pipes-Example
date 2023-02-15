@@ -1,0 +1,60 @@
+@import '../../assets/scss/variables';
+
+.header-module {
+    background-image: url('../../assets/images/pattern.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $spacer-4 $spacer-0;
+
+    .heading {
+        font-size: $font-xl;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    .container {
+        position: relative;
+
+        .logo-base {
+            position: absolute;
+            left: 0;
+            top: -40px;
+            background-color: $color-green;
+            width: 150px;
+            height: 108px;
+            border-right: 100px solid transparent;
+            
+            .logo-icon{
+                font-size: 50px;
+                color: $color-white;
+                margin-left: 42px;
+                margin-top: 23px;
+                transition: all 0.5s;
+            }
+            &:hover .logo-icon{
+                color: $color-yellow;
+            }
+        }
+        
+
+        .triangle {
+            position: absolute;
+            left: 0;
+            top: 65px;
+            width: 150px;
+            height: 100px;
+            overflow: hidden;
+
+            &::after {
+                content: '';
+                background: $color-green;
+                width: 140%;
+                height: 190%;
+                position: absolute;
+                transform: rotate(57deg) translate(-75%, 0);
+            }
+        }
+    }
+
+}
