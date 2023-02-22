@@ -5,12 +5,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: $spacer-4 $spacer-0;
+    padding: $spacer-3 $spacer-0;
 
     .heading {
         font-size: $font-xl;
         font-weight: 700;
         text-align: right;
+    }
+    .date{
+        font-size: $font-sm;
+        text-align: right;
+        font-weight: 600;
     }
 
     .container {
@@ -19,17 +24,17 @@
         .logo-base {
             position: absolute;
             left: 0;
-            top: -40px;
+            top: -32px;
             background-color: $color-green;
             width: 150px;
-            height: 108px;
+            height: 117px;
             border-right: 100px solid transparent;
             
             .logo-icon{
                 font-size: 50px;
                 color: $color-white;
                 margin-left: 42px;
-                margin-top: 23px;
+                margin-top: 33px;
                 transition: all 0.5s;
             }
             &:hover .logo-icon{
@@ -41,7 +46,7 @@
         .triangle {
             position: absolute;
             left: 0;
-            top: 65px;
+            top: 85px;
             width: 150px;
             height: 100px;
             overflow: hidden;
